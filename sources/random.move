@@ -7,7 +7,6 @@ module sicbogame::random{
     use sui::tx_context::TxContext;
     
     const ERR_HIGH_ARG_GREATER_THAN_LOW_ARG: u64 = 101;
-sui move build
 
     fun seed(ctx: &mut TxContext): vector<u8> {
         let ctx_bytes = bcs::to_bytes(ctx);
